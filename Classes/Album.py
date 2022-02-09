@@ -10,9 +10,3 @@ class Album:
     def get_songs(self):
         return self.songs
 
-    def is_exists(self, check_artist):
-        for artist in self.artists:
-            if artist.id == artist.id:
-                return True
-            else:
-                return False
