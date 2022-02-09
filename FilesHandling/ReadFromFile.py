@@ -30,7 +30,7 @@ class ReadFromFile:
         album = Album(str(album_id_code), str(album_name))
         return album
 
-    def get_artist(self, path):
+    def create_artists(self, path):
         artists_data = self.readFromAFile(self, path)["artists"]
         artists = []
         for artist in artists_data:
