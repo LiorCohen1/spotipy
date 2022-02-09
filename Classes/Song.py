@@ -4,7 +4,5 @@ class Song:
         self.popularity = song_popularity
         self.name = song_name
 
-
-
     def get_popularity(self):
         return self.popularity
