@@ -9,3 +9,6 @@ class Artist:
 
     def get_albums(self):
         return self.albums
+
+    def get_id(self):
+        return self.id
