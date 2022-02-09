@@ -1,6 +1,3 @@
-from AuxiliaryFolder.Artists import *
-
-
 class AuxiliaryFunctions:
     def is_exists(self, check_item, items):
         for item in items:
