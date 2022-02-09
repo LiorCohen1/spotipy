@@ -20,7 +20,7 @@ class ReadFromFile:
         song_popularity = song_data["popularity"]
         song_name = song_data["name"]
         song_id_code = song_data["id"]
-        song = Song(str(song_id_code), int(song_popularity), str(song_name))
+        song = Song(song_id_code, song_popularity, song_name)
         return song
 
     def get_album(self, path):
