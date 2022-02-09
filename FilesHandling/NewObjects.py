@@ -1,4 +1,4 @@
-from ReadFromFile import *
+from FilesHandling.ReadFromFile import *
 from AuxiliaryFolder.AuxiliaryFunctions import *
 from Classes.Artist import Artist
 
@@ -23,6 +23,6 @@ class NewObjects:
                 artists.add_artist(artist)
                 artist.add_album(album)
                 Album.add_song_into_album(Album, album, artist, song)
-        return artists, artist
+        return artists
 
 
