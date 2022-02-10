@@ -12,7 +12,8 @@ class NewObjects:
         album = (ReadFromFile.get_album(ReadFromFile, path))
         for artist in song_artists:
             if AuxiliaryFunctions.is_exists(AuxiliaryFunctions, artist, artists.artists):
-                if AuxiliaryFunctions.is_exists(AuxiliaryFunctions, album, artists.get_artist(Artist.get_id(artist),artists).get_albums()):
+                if AuxiliaryFunctions.is_exists(AuxiliaryFunctions, album,
+                                                artists.get_artist(Artist.get_id(artist), artists).get_albums()):
                     AuxiliaryFunctions.add_song_into_album(AuxiliaryFunctions, album, artist, song)
 
 
@@ -24,5 +25,3 @@ class NewObjects:
                 artist.add_album(album)
                 Album.add_song_into_album(Album, album, artist, song)
         return artists
-
-
