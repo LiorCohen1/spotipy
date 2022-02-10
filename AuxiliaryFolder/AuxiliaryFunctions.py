@@ -33,3 +33,15 @@ class AuxiliaryFunctions:
 
         print("Song dose not exists")
         return None
+
+    def print_artists(self, stock):
+        for artist in stock.artists:
+            print(" artist name : " + artist.name)
+            print(" artist id " + artist.id)
+
+    def print_albums(self, stock):
+        for artist in stock.artists:
+            print("Artist name: " + artist.name)
+            for album in artist.albums:
+                print("Album name: " + album.name)
+                print("Album id: " + album.id)
